@@ -20,7 +20,7 @@ const InfoTable = ({ storedInfoDetails }) => {
           <tbody>
             {storedInfoDetails?.map((infoDetail, index) => (
               <InfoRow
-                key={storedInfoDetails._id}
+                key={infoDetail._id}
                 infoDetail={infoDetail}
                 index={index}
               />
