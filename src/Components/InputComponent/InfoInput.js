@@ -32,7 +32,7 @@ const InfoInput = ({
           <label className="input-group">
             <span className="w-36">Amount</span>
             <input
-              type="text"
+              type="number"
               placeholder="Enter Amount ( in INR )"
               className="input input-bordered w-full"
               {...register("amount", { required: true, maxLength: 20 })}
@@ -66,7 +66,7 @@ const InfoInput = ({
               type="text"
               placeholder="Remark"
               className="input input-bordered w-full"
-              {...register("remark", { required: true, maxLength: 20 })}
+              {...register("remark", { required: true, maxLength: 66 })}
             />
           </label>
           <p className="font-semibold text-sm text-error text-start">
